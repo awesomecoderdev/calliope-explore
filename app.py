@@ -617,5 +617,7 @@ def update_url(*values):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    port = int(8050)  # Get the PORT environment variable or use default port 8050
+    app.run_server(host='0.0.0.0', port=port,debug=True)
+    # app.run_server(debug=True)
 
