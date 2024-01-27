@@ -1,0 +1,13 @@
+# specify the version of docker-compose
+version: "3.8"
+
+services:
+    app:
+        image: python:3.8
+        command: sh -c "pip install --no-cache-dir -r /app/requirements.txt && pip install pipenv && pipenv install && pipenv install dash && pipenv install pandas && pipenv install dash-bootstrap-components && pipenv install dash_dangerously_set_inner_html && pipenv run python /app/app.py"
+        ports:
+            - "8050:8050"
+        volumes:
+            - .:/app
+        environment:
+            - ENVIRONMENT=development

@@ -1,0 +1,4 @@
+assets/img/*
+!assets/img/.gitkeep
+Makefile
+external_scripts.json
