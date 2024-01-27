@@ -8,13 +8,12 @@ Work in progress. [Feedback is welcome!](https://github.com/calliope-project/cal
 
 Manual preparation steps:
 
-* Obtain all images and place them in `assets/img`
+-   Obtain all images and place them in `assets/img`
 
 Requires a Python 3.8 interpreter and pipenv.
 
 ```
-pipenv install
-pipenv run python app.py
+ docker-compose up --build
 ```
 
 # LICENSE
